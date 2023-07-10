@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Image Converter</h1>
+    <div class="drop-zone" id="drop-zone" ondrop="handleDrop(event)" ondragover="handleDragOver(event)" ondragenter="handleDragEnter(event)" ondragleave="handleDragLeave(event)">
+        <p>Drag and drop an image file here</p>
+        <p>or</p>
+        <label for="image-input" class="custom-button">Choose File</label>
+        <input type="file" id="image-input" accept="image/*" class="file-input" onchange="handleFiles(event)">
+    </div>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <br>
+    <div>
+        <button class="convert-button" onclick="convertTo('jpeg')">Convert to JPG</button>
+        <button class="convert-button" onclick="convertTo('png')">Convert to PNG</button>
+    </div>
+    <br>
+    <img id="image-preview">
+    <br>
+    <a id="download-link" style="display: none;" download="converted_image">
+        <button class="download-button">Download Image</button>
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>

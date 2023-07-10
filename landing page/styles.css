@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color: #333;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+header {
+    background-color: #f89191;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #888;
+}
+
+/* Hero section */
+#hero {
+    background-image: url("1_AIsvBA_FgklEELzkL9wAtA.png");
+    background-size: cover;
+    background-position: center;
+    color: #f0eeee;
+    text-align: center;
+    padding: 200px 0;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    color: #eb0c0c;
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-left: 30%;
+    color:rgb(7, 95, 246)
+}
+#about{
+    background-color: #8885e5;
+    padding-left:30%;
+    padding-right:30%;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    color:rgb(11, 11, 11);
+}
+.main h2{
+    padding-right:50%;
+    color:darkslateblue;
+    font-size: xx-large;
+}
+.ben{
+    gap: 40px;
+    color:rgb(13, 12, 12);
+    background-color: rgb(129, 245, 245);
+    
+}
+.ben h2{
+    padding-left:50%;
+    color:rgb(38, 7, 236);
+    font-size: xx-large;
+}
+.app {
+    font-family: 'Times New Roman', Times, serif; 
+    background-color:rgb(242, 108, 103);
+}
+.app  h2{
+    padding-left:50%;
+    color:rgb(38, 7, 236);
+    font-size: xx-large;
+}
+.cta-button {
+    display: inline-block;
+    margin-left: 30%;
+    padding: 15px 30px;
+    background-color: #6c63ff;
+    color: #0bef22;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #443fe3;
+}
+form input,
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #6c63ff;
+    color: #fff;
+    cursor: pointer;
+}
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
